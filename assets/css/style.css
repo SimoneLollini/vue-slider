@@ -42,7 +42,7 @@
     position: relative;
 }
 
-/* 
+
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
@@ -57,8 +57,9 @@
 .thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
-    
-} */
+
+}
+
 .prev,
 .next {
     width: 20px;
@@ -77,11 +78,8 @@
     bottom: 0;
 }
 
-/*
-EXTRA: in questo esempio gli accordion vengono creati
-usando 2 bordi di un quadratino ruotato di 45 gradi
-In una versione base si possono usare delle icone
-oppure i caratteri ∧ (&and;) e ∨ (&or;)
+
+/* EXTRA: in questo esempio gli accordion vengono creati usando 2 bordi di un quadratino ruotato di 45 gradi In una versione base si possono usare delle icone oppure i caratteri ∧ (&and; ) e ∨ (&or; )  */
 .prev::after {
     content: '';
     width: 10px;
@@ -107,4 +105,3 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     left: 50%;
     transform: translate(-50%) rotate(135deg);
 }
-*/
