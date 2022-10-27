@@ -29,10 +29,28 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            slides
+            slides,
+            activeSlide: 0,
         }
+    },
+    methods: {
+        nextSlide() {
+            console.log('Hai cliccato next');
+            this.activeSlide++
+        },
+        prevSlide() {
+            console.log('Hai cliccato prev');
+            this.activeSlide--
+        }
+
     }
-}).mount('#app')
+
+}
+).mount('#app')
+
+
+
+// impostare in modo che se activeSlide = all valore del contatore allora la slide sarà visibile 
 
 
 
