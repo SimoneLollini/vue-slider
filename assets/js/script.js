@@ -45,10 +45,12 @@ createApp({
             // console.log('Hai cliccato prev');
             this.activeSlide--
             if (this.activeSlide < 0) {
-                console.log('minore');
                 this.activeSlide = slides.length
                 this.activeSlide--
             }
+        },
+        currentSlide(index) {
+            this.activeSlide = index
         }
 
     }
@@ -56,7 +58,6 @@ createApp({
 }
 ).mount('#app')
 
-console.log(slides.length);
 
 // impostare in modo che se activeSlide = all valore del contatore allora la slide sarà visibile 
 
