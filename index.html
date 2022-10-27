@@ -26,10 +26,11 @@
                 </div>
             </div>
             <div class="thumbs">
-                <div class="prev" @click="nextSlide"></div>
-                <div class="next" @click="prevSlide"></div>
+                <div class="prev" @click="prevSlide"></div>
+                <div class="next" @click="nextSlide"></div>
                 <div class="thumb" v-for="(slide,i) in slides">
-                    <img :src="'./assets/' + slide.image" :alt="slide.title" @click="currentSlide(i)">
+                    <img :src="'./assets/' + slide.image" :alt="slide.title" @click="currentSlide(i)"
+                        :class="i===activeSlide?'active':''">
                 </div>
             </div>
 
